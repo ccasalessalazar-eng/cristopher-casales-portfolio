@@ -16,15 +16,20 @@ matplotlib · seaborn Excel Intermedio Conciliaciones Financieras
 
 📂 Proyectos
 
-1 Análisis Financiero · AdventureWorks SQL, QuickSight
-2 Embudo y Retención · MercadoLibre SQL, Cohortes 
-3 Movilidad Urbana · LATAM Python, pandas
+1. Análisis Financiero · AdventureWorks SQL, QuickSigh
+   
+2. Embudo y Retención · MercadoLibre SQL, Cohortes
+  
+3. Movilidad Urbana · LATAM Python, pandas
 
 📩 Contacto
 
 ∙	Email: ccasales.salazar@gmail.com
+
 ∙	LinkedIn: cristopher-casales-salazar
+
 ∙	Hireline: Ver portafolio completo
+
 ∙	Teléfono: 55 15 25 52 87
 
 
