@@ -26,7 +26,7 @@ matplotlib · seaborn Excel Intermedio Conciliaciones Financieras
 
 ∙	Email: ccasales.salazar@gmail.com
 
-∙	LinkedIn: cristopher-casales-salazar
+∙	LinkedIn: https://www.linkedin.com/in/cristopher-casales-salazar-108a5b250
 
 ∙	Hireline: Ver portafolio completo
 
