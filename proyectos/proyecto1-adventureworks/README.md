@@ -34,6 +34,8 @@ SELECT * FROM ventas_2017 LIMIT 10;
 
 SELECT * FROM productos LIMIT 10;
 
+![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/9562fd3825aec7d8ef660b3a385c489b35331274/proyectos/proyecto1-adventureworks/IMG_8781.jpeg)
+
 SELECT * FROM productos_categorias LIMIT 10;
 
 SELECT * FROM territorios LIMIT 10;
