@@ -29,9 +29,13 @@ Parte 1: Explorar el esquema
 Imprimí los primeros 10 registros de cada tabla para entender la estructura de datos e identificar las claves de unión (ClaveProducto, ClaveTerritorio, IDCampana).
 
 SELECT * FROM ventas_2017 LIMIT 10;
+
 SELECT * FROM productos LIMIT 10;
+
 SELECT * FROM productos_categorias LIMIT 10;
+
 SELECT * FROM territorios LIMIT 10;
+
 SELECT * FROM campanas LIMIT 10;
 
 Parte 2: Extraer y limpiar datos
