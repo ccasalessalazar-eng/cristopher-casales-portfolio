@@ -2,6 +2,7 @@
 Fraud & Risk · Fintech · SQL · Python📍 Ciudad de México | ✉️ ccasales.salazar@gmail.com
 
 🧑‍💻 Sobre mí
+
 Analista con más de 5 años de experiencia en prevención de fraude y análisis financiero en el sector fintech, en transición hacia roles de Data Analytics. Me especializo en usar SQL y Python para investigar patrones, automatizar procesos y convertir datos en decisiones de negocio claras.
 Trabajé en empresas como Stori, EVO Payments y ALBO, donde aprendí que detrás de cada transacción hay una historia — y que los datos son el mejor idioma para contarla. Actualmente refuerzo mis habilidades técnicas en el Bootcamp de Data Analytics de TripleTen.
 Busco una oportunidad como Data Analyst o Fraud & Risk Analyst donde pueda aportar visión de negocio, experiencia real en el sector financiero y capacidad de análisis técnico.
