@@ -12,6 +12,9 @@ Preguntas clave del negocio:
 	∙	¿Cuánto estamos ganando por país?
 	∙	¿Qué tan rentable es cada mercado considerando los gastos de marketing?
 
+	<img width="539" height="234" alt="Captura de pantalla 2026-03-26 201342" src="https://github.com/user-attachments/assets/55b48437-95cc-44b4-8d38-e2093ad678df" />
+
+
   🗂 Dataset
   
 Tablas utilizadas:
