@@ -20,22 +20,37 @@ Preguntas clave del negocio:
 
 🗂 Dataset
 
+![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/f01f8891800f58681b7cb5e66c21aac19a76257a/proyectos/proyecto2-mercadolibre/IMG_8964.jpeg)
 
 Eventos del embudo (Macro Journey)
+
+![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/f01f8891800f58681b7cb5e66c21aac19a76257a/proyectos/proyecto2-mercadolibre/IMG_8965.jpeg)
 
 🔍 Mi análisis — Proceso paso a paso
 
 Parte 1: Explorar el esquema
+
 Exploré las tablas para entender la estructura de datos, tipos de columnas y secuencia de eventos disponibles.
 
 SELECT * FROM mercadolibre_funnel LIMIT 5;
+
+![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/f01f8891800f58681b7cb5e66c21aac19a76257a/proyectos/proyecto2-mercadolibre/IMG_8832.jpeg)
+
 SELECT * FROM mercadolibre_retention LIMIT 5;
+
+![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/f01f8891800f58681b7cb5e66c21aac19a76257a/proyectos/proyecto2-mercadolibre/IMG_8833.jpeg)
+
 SELECT DISTINCT event_name FROM mercadolibre_funnel ORDER BY event_name;
 
+![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/f01f8891800f58681b7cb5e66c21aac19a76257a/proyectos/proyecto2-mercadolibre/IMG_8834.jpeg)
 
 Parte 2: Construir el embudo de conversión
 
 Construí el embudo con CTEs encadenados — uno por etapa — usando DISTINCT user_id para evitar duplicados, y uní todo con LEFT JOIN desde first_visit.
+
+![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/f01f8891800f58681b7cb5e66c21aac19a76257a/proyectos/proyecto2-mercadolibre/IMG_8839.jpeg)
+![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/f01f8891800f58681b7cb5e66c21aac19a76257a/proyectos/proyecto2-mercadolibre/IMG_8840.jpeg)
+![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/f01f8891800f58681b7cb5e66c21aac19a76257a/proyectos/proyecto2-mercadolibre/IMG_8841.jpeg)
 
 Parte 3: Analizar retención y cohortes
 
