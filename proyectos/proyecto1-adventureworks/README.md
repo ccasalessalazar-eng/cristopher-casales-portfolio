@@ -28,11 +28,17 @@ Parte 1: Explorar el esquema
 
 Imprimí los primeros 10 registros de cada tabla para entender la estructura de datos e identificar las claves de unión (ClaveProducto, ClaveTerritorio, IDCampana).
 
-SELECT * FROM ventas_2017 LIMIT 10;
+SELECT * 
+FROM ventas_2017 
+LIMIT 10
+;
 
 ![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/7199772a3006213515d84848b18868a0bd92118c/proyectos/proyecto1-adventureworks/IMG_8780.jpeg)
 
-SELECT * FROM productos LIMIT 10;
+SELECT * 
+FROM productos 
+LIMIT 10
+;
 
 ![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/9562fd3825aec7d8ef660b3a385c489b35331274/proyectos/proyecto1-adventureworks/IMG_8781.jpeg)
 
@@ -41,9 +47,11 @@ SELECT * FROM productos_categorias LIMIT 10;
 ![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/29160c5d253cc5038432ee2b9e6e660fea70b970/proyectos/proyecto1-adventureworks/IMG_8782.jpeg)
 
 SELECT * FROM territorios LIMIT 10;
+
 ![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/29160c5d253cc5038432ee2b9e6e660fea70b970/proyectos/proyecto1-adventureworks/IMG_8783.jpeg)
 
 SELECT * FROM campanas LIMIT 10;
+
 ![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/29160c5d253cc5038432ee2b9e6e660fea70b970/proyectos/proyecto1-adventureworks/IMG_8784.jpeg)
 
 Parte 2: Extraer y limpiar datos
