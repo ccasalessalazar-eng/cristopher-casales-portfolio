@@ -112,12 +112,16 @@ SELECT
     SUM(CASE WHEN clave_territorio IS NULL THEN 1 ELSE 0 END) AS nulos_territorio
 FROM ventas_2017;
 
+![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/386f3fe35aa7011654291db2ae43e4beeadf359d/proyectos/proyecto1-adventureworks/IMG_8962.jpeg)
+
 ∙	Comprobé valores no válidos en ventas_2017 (cantidad)
 
 SELECT 
     COUNT(*) AS filas_cantidad_no_valida
 FROM ventas_2017
 WHERE cantidad_pedido <= 0;
+
+![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/386f3fe35aa7011654291db2ae43e4beeadf359d/proyectos/proyecto1-adventureworks/IMG_8961.jpeg)
 
 ∙	 Confirmé precios en productos
 
