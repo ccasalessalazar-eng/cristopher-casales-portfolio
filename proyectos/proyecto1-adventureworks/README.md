@@ -38,9 +38,13 @@ SELECT * FROM productos LIMIT 10;
 
 SELECT * FROM productos_categorias LIMIT 10;
 
+![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/29160c5d253cc5038432ee2b9e6e660fea70b970/proyectos/proyecto1-adventureworks/IMG_8782.jpeg)
+
 SELECT * FROM territorios LIMIT 10;
+![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/29160c5d253cc5038432ee2b9e6e660fea70b970/proyectos/proyecto1-adventureworks/IMG_8783.jpeg)
 
 SELECT * FROM campanas LIMIT 10;
+![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/29160c5d253cc5038432ee2b9e6e660fea70b970/proyectos/proyecto1-adventureworks/IMG_8784.jpeg)
 
 Parte 2: Extraer y limpiar datos
 
