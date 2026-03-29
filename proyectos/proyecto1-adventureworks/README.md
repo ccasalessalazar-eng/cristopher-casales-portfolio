@@ -75,6 +75,8 @@ JOIN productos AS p ON v.clave_producto = p.clave_producto
 LEFT JOIN productos_categorias AS pc ON p.clave_subcategoria = pc.clave_subcategoria
 LEFT JOIN territorios AS t ON v.clave_territorio = t.clave_territorio;
 
+![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/8d3a9001ebf1b538a13ad39b9f800b10cf19166a/proyectos/proyecto1-adventureworks/IMG_8787.jpeg)
+
 Parte 3: Calcular KPIs financieros
 
 Calculé los indicadores clave por país:
@@ -97,42 +99,35 @@ LEFT JOIN pais_campanas AS c ON p.clave_territorio = c.clave_territorio
 GROUP BY p.pais, p.clave_territorio
 ORDER BY p.clave_territorio, ingresos, costos;
 
+![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/8d3a9001ebf1b538a13ad39b9f800b10cf19166a/proyectos/proyecto1-adventureworks/IMG_8790.jpeg)
+
 Parte 4: Validar resultados y QA
 Verifiqué la calidad de los datos:
 
 ∙	Validé que no hubiera NULLs en claves principales
 
-
-SELECT
-    SUM(CASE WHEN numero_pedido IS NULL THEN 1 ELSE 0 END) AS nulos_numero_pedido,
-    SUM(CASE WHEN clave_producto IS NULL THEN 1 ELSE 0 END) AS nulos_clave_producto,
-    SUM(CASE WHEN clave_territorio IS NULL THEN 1 ELSE 0 END) AS nulos_clave_territorio
+SELECT 
+    SUM(CASE WHEN numero_pedido IS NULL THEN 1 ELSE 0 END) AS nulos_pedido,
+    SUM(CASE WHEN clave_producto IS NULL THEN 1 ELSE 0 END) AS nulos_producto,
+    SUM(CASE WHEN clave_territorio IS NULL THEN 1 ELSE 0 END) AS nulos_territorio
 FROM ventas_2017;
 
-∙	Comprobé que no existieran precios negativos (productos_precio_no_valido = 0)
+∙	Comprobé valores no válidos en ventas_2017 (cantidad)
 
-SELECT
+SELECT 
+    COUNT(*) AS filas_cantidad_no_valida
+FROM ventas_2017
+WHERE cantidad_pedido <= 0;
+
+∙	 Confirmé precios en productos
+
+SELECT 
     COUNT(*) AS productos_precio_no_valido
 FROM productos
 WHERE precio_producto < 0;
--- Resultado esperado: 0
 
-∙	 Confirmé que los totales por país cuadraran con los totales generales
+![image alt](https://github.com/ccasalessalazar-eng/cristopher-casales-portfolio/blob/8d3a9001ebf1b538a13ad39b9f800b10cf19166a/proyectos/proyecto1-adventureworks/IMG_8793.jpeg)
 
--- QA 3: Validar que totales por país cuadren con total general
-SELECT
-    SUM(ingreso_total) AS total_ingresos_general,
-    SUM(costo_total)   AS total_costos_general
-FROM ventas_clean;
-
--- Comparar contra suma por pais
-SELECT
-    pais,
-    SUM(ingreso_total) AS ingresos_por_pais,
-    SUM(costo_total)   AS costos_por_pais
-FROM ventas_clean
-GROUP BY pais
-ORDER BY ingresos_por_pais DESC;
 
 📊 Conclusiones principales
 
